@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Environments" representedClassName="Environments" syncable="YES" codeGenerationType="category">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="equipsFromEnviroment" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Equipments" inverseName="enviromentFromEquips" inverseEntity="Equipments" syncable="YES"/>
+    </entity>
+    <entity name="Equipments" representedClassName="Equipments" syncable="YES" codeGenerationType="category">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="power" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="enviromentFromEquips" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Environments" inverseName="equipsFromEnviroment" inverseEntity="Environments" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Environments" positionX="-321.8046875" positionY="861.98046875" width="128" height="73"/>
+        <element name="Equipments" positionX="-137.11328125" positionY="846.26171875" width="128" height="88"/>
+    </elements>
+</model>
