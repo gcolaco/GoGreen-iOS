@@ -16,10 +16,11 @@ class CalculationTableViewController: UITableViewController {
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     var environmentsList: [Environments] = []
-//    var array: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
+        
         loadElement()
 
     }
@@ -32,7 +33,7 @@ class CalculationTableViewController: UITableViewController {
         
         let alert = UIAlertController(title: "Informe o nome do ambiente a ser adicionado", message: "", preferredStyle: .alert)
         let add = UIAlertAction(title: "Adicionar", style: .default) { (action) in
-           self.addElement(textField: textField)
+           self.addElement(withTextFrom: textField)
         }
         
         let cancel = UIAlertAction(title: "cancelar", style: .cancel, handler: nil)
@@ -50,7 +51,7 @@ class CalculationTableViewController: UITableViewController {
     }
     
     //add a new environment into the environmentsList and save it in core data database
-    func addElement(textField: UITextField) {
+    func addElement(withTextFrom textField: UITextField) {
         let newEnvironment = Environments(context: self.context)
         newEnvironment.name = textField.text
         self.environmentsList.append(newEnvironment)
@@ -104,5 +105,41 @@ class CalculationTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
+    
+}
+
+// MARK: - searchBar Extension
+
+extension CalculationTableViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request: NSFetchRequest<Environments> = Environments.fetchRequest()
+        
+        request.predicate = NSPredicate(format: "name CONTAINS [cd] %@", searchBar.text!)
+        
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
+       
+        do{
+            environmentsList = try context.fetch(request)
+        }catch{
+            print(error.localizedDescription)
+        }
+        
+        tableView.reloadData()
+        
+    }
+    
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 0 {
+            loadElement()
+            tableView.reloadData()
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
+    }
+    
     
 }
