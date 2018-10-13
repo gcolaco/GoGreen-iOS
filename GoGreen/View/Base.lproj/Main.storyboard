@@ -281,8 +281,14 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="j5h-4W-9E3"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HFV-h5-Qye">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addEnvironment:" destination="hHo-Mk-iPc" id="GZs-w9-FHy"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="Lqa-AY-8av" id="4bB-Xt-I23"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlb-NU-bDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
