@@ -239,7 +239,7 @@
         <!--Lista Ambientes-->
         <scene sceneID="dWu-4n-5Sa">
             <objects>
-                <tableViewController id="hHo-Mk-iPc" customClass="CalculationTableViewController" customModule="GoGreen" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="hHo-Mk-iPc" customClass="EnvironmentsListTableViewController" customModule="GoGreen" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="igu-EQ-dMP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,9 +267,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="GIc-j9-J9a" kind="show" id="rGn-WT-drH"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -288,6 +285,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="Lqa-AY-8av" id="4bB-Xt-I23"/>
+                        <segue destination="GIc-j9-J9a" kind="show" identifier="goToEquipmentsList" id="WM4-Qr-hm0"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlb-NU-bDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,7 +295,7 @@
         <!--Lista Equipamentos-->
         <scene sceneID="weg-ZL-gpM">
             <objects>
-                <viewController id="GIc-j9-J9a" sceneMemberID="viewController">
+                <viewController id="GIc-j9-J9a" customClass="EquipmentsListViewController" customModule="GoGreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1az-6R-1kH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

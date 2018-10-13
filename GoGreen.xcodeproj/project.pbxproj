@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		727B9C4921704FE80052E348 /* CalculationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C4821704FE80052E348 /* CalculationTableViewController.swift */; };
+		727B9C4921704FE80052E348 /* EnvironmentsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C4821704FE80052E348 /* EnvironmentsListTableViewController.swift */; };
+		727B9C4B21728BE00052E348 /* EquipmentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C4A21728BE00052E348 /* EquipmentsListViewController.swift */; };
 		72A55408216800C000EFB8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55407216800C000EFB8DE /* AppDelegate.swift */; };
 		72A5540A216800C000EFB8DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55409216800C000EFB8DE /* ViewController.swift */; };
 		72A5540D216800C000EFB8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5540B216800C000EFB8DE /* Main.storyboard */; };
@@ -19,7 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		727B9C4821704FE80052E348 /* CalculationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationTableViewController.swift; sourceTree = "<group>"; };
+		727B9C4821704FE80052E348 /* EnvironmentsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentsListTableViewController.swift; sourceTree = "<group>"; };
+		727B9C4A21728BE00052E348 /* EquipmentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentsListViewController.swift; sourceTree = "<group>"; };
 		72A55404216800C000EFB8DE /* GoGreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A55407216800C000EFB8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A55409216800C000EFB8DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				72A55409216800C000EFB8DE /* ViewController.swift */,
-				727B9C4821704FE80052E348 /* CalculationTableViewController.swift */,
+				727B9C4821704FE80052E348 /* EnvironmentsListTableViewController.swift */,
+				727B9C4A21728BE00052E348 /* EquipmentsListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,11 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A5540A216800C000EFB8DE /* ViewController.swift in Sources */,
+				727B9C4B21728BE00052E348 /* EquipmentsListViewController.swift in Sources */,
 				72A55423216AEFD700EFB8DE /* Equipments.swift in Sources */,
 				72A55421216AEF8500EFB8DE /* Environments.swift in Sources */,
 				72A55410216800C000EFB8DE /* GoGreen.xcdatamodeld in Sources */,
 				72A55408216800C000EFB8DE /* AppDelegate.swift in Sources */,
-				727B9C4921704FE80052E348 /* CalculationTableViewController.swift in Sources */,
+				727B9C4921704FE80052E348 /* EnvironmentsListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

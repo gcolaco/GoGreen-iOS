@@ -1,5 +1,5 @@
 //
-//  CalculationTableViewController.swift
+//  EnvironmentsListTableViewController.swift
 //  GoGreen
 //
 //  Created by Gustavo Colaco on 12/10/18.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class CalculationTableViewController: UITableViewController {
+class EnvironmentsListTableViewController: UITableViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -54,6 +54,7 @@ class CalculationTableViewController: UITableViewController {
     func addElement(withTextFrom textField: UITextField) {
         let newEnvironment = Environments(context: self.context)
         newEnvironment.name = textField.text
+        
         self.environmentsList.append(newEnvironment)
         
         do{
@@ -103,6 +104,16 @@ class CalculationTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "goToEquipmentsList", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! EquipmentsListViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.selectedEnvironment = environmentsList[indexPath.row]
+        }
+        
     }
 
     
@@ -110,7 +121,7 @@ class CalculationTableViewController: UITableViewController {
 
 // MARK: - searchBar Extension
 
-extension CalculationTableViewController: UISearchBarDelegate {
+extension EnvironmentsListTableViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let request: NSFetchRequest<Environments> = Environments.fetchRequest()
