@@ -6,6 +6,7 @@
     </entity>
     <entity name="Equipments" representedClassName=".Equipments" syncable="YES" codeGenerationType="category">
         <attribute name="daysUsage" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="done" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="hoursUsage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="power" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -13,6 +14,6 @@
     </entity>
     <elements>
         <element name="Environments" positionX="-338.68359375" positionY="861.078125" width="128" height="73"/>
-        <element name="Equipments" positionX="-131.453125" positionY="844.15234375" width="128" height="118"/>
+        <element name="Equipments" positionX="-131.453125" positionY="844.15234375" width="128" height="133"/>
     </elements>
 </model>

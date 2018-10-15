@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		727B9C4921704FE80052E348 /* EnvironmentsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C4821704FE80052E348 /* EnvironmentsListTableViewController.swift */; };
 		727B9C4B21728BE00052E348 /* EquipmentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C4A21728BE00052E348 /* EquipmentsListViewController.swift */; };
+		727B9C4D2172944E0052E348 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C4C2172944E0052E348 /* ExpandableHeaderView.swift */; };
+		727B9C4F217294E90052E348 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C4E217294E90052E348 /* Section.swift */; };
+		727B9C532172F1920052E348 /* AddEquipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C522172F1920052E348 /* AddEquipViewController.swift */; };
 		72A55408216800C000EFB8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55407216800C000EFB8DE /* AppDelegate.swift */; };
 		72A5540A216800C000EFB8DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55409216800C000EFB8DE /* ViewController.swift */; };
 		72A5540D216800C000EFB8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5540B216800C000EFB8DE /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		727B9C4821704FE80052E348 /* EnvironmentsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentsListTableViewController.swift; sourceTree = "<group>"; };
 		727B9C4A21728BE00052E348 /* EquipmentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentsListViewController.swift; sourceTree = "<group>"; };
+		727B9C4C2172944E0052E348 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
+		727B9C4E217294E90052E348 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		727B9C522172F1920052E348 /* AddEquipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEquipViewController.swift; sourceTree = "<group>"; };
 		72A55404216800C000EFB8DE /* GoGreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A55407216800C000EFB8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A55409216800C000EFB8DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 				72A55409216800C000EFB8DE /* ViewController.swift */,
 				727B9C4821704FE80052E348 /* EnvironmentsListTableViewController.swift */,
 				727B9C4A21728BE00052E348 /* EquipmentsListViewController.swift */,
+				727B9C522172F1920052E348 /* AddEquipViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -89,6 +96,7 @@
 			children = (
 				72A5540B216800C000EFB8DE /* Main.storyboard */,
 				72A55413216800C200EFB8DE /* LaunchScreen.storyboard */,
+				727B9C4C2172944E0052E348 /* ExpandableHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 				72A5540E216800C000EFB8DE /* GoGreen.xcdatamodeld */,
 				72A55420216AEF8500EFB8DE /* Environments.swift */,
 				72A55422216AEFD700EFB8DE /* Equipments.swift */,
+				727B9C4E217294E90052E348 /* Section.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,11 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727B9C4F217294E90052E348 /* Section.swift in Sources */,
 				72A5540A216800C000EFB8DE /* ViewController.swift in Sources */,
 				727B9C4B21728BE00052E348 /* EquipmentsListViewController.swift in Sources */,
 				72A55423216AEFD700EFB8DE /* Equipments.swift in Sources */,
 				72A55421216AEF8500EFB8DE /* Environments.swift in Sources */,
 				72A55410216800C000EFB8DE /* GoGreen.xcdatamodeld in Sources */,
+				727B9C4D2172944E0052E348 /* ExpandableHeaderView.swift in Sources */,
+				727B9C532172F1920052E348 /* AddEquipViewController.swift in Sources */,
 				72A55408216800C000EFB8DE /* AppDelegate.swift in Sources */,
 				727B9C4921704FE80052E348 /* EnvironmentsListTableViewController.swift in Sources */,
 			);

@@ -112,6 +112,7 @@ class EnvironmentsListTableViewController: UITableViewController {
         
         if let indexPath = tableView.indexPathForSelectedRow {
             destinationVC.selectedEnvironment = environmentsList[indexPath.row]
+
         }
         
     }
