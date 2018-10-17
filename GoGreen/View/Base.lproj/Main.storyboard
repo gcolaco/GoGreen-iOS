@@ -32,6 +32,7 @@
                                         <rect key="frame" x="37" y="366" width="341" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrK-5Y-cKB">
@@ -141,12 +142,14 @@
                                         <rect key="frame" x="35" y="401" width="341" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t0K-3n-weD">
                                         <rect key="frame" x="35" y="475" width="341" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYU-B3-eok">
@@ -185,6 +188,7 @@
                                 <rect key="frame" x="35" y="325" width="341" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -202,6 +206,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bIl-ZP-TLA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mRm-zi-erh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" name="mainColor"/>
@@ -373,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owa-7X-yQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2544.9275362318845" y="49.553571428571423"/>
+            <point key="canvasLocation" x="2487" y="-108"/>
         </scene>
         <!--Definição de uso-->
         <scene sceneID="sZU-wo-8BI">
@@ -590,18 +595,60 @@
         <!--Gráfico-->
         <scene sceneID="BV2-7L-83D">
             <objects>
-                <viewController id="r8C-Im-BFc" sceneMemberID="viewController">
+                <viewController id="r8C-Im-BFc" customClass="ChartsViewController" customModule="GoGreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fo4-P1-CK1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jH-8C-knU">
+                                <rect key="frame" x="0.0" y="140" width="414" height="1177"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxt-0U-D0x" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="531"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="531" id="PAJ-Ad-enX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsg-WQ-EH8" customClass="HorizontalBarChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="539" width="414" height="638"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="638" id="vnB-CY-K8l"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Nsg-WQ-EH8" secondAttribute="bottom" id="30V-1b-nYx"/>
+                                    <constraint firstAttribute="height" constant="1177" id="BHF-OD-kha"/>
+                                    <constraint firstItem="yxt-0U-D0x" firstAttribute="centerX" secondItem="1jH-8C-knU" secondAttribute="centerX" id="FEw-W2-f7K"/>
+                                    <constraint firstItem="yxt-0U-D0x" firstAttribute="leading" secondItem="1jH-8C-knU" secondAttribute="leading" id="Upg-E3-BEC"/>
+                                    <constraint firstAttribute="trailing" secondItem="yxt-0U-D0x" secondAttribute="trailing" id="WlP-HP-nag"/>
+                                    <constraint firstItem="yxt-0U-D0x" firstAttribute="top" secondItem="1jH-8C-knU" secondAttribute="top" id="fZ5-Vf-RQ3"/>
+                                    <constraint firstItem="Nsg-WQ-EH8" firstAttribute="top" secondItem="yxt-0U-D0x" secondAttribute="bottom" constant="8" symbolic="YES" id="oGL-jl-4nR"/>
+                                    <constraint firstItem="yxt-0U-D0x" firstAttribute="trailing" secondItem="Nsg-WQ-EH8" secondAttribute="trailing" id="owB-h3-dhe"/>
+                                    <constraint firstItem="yxt-0U-D0x" firstAttribute="leading" secondItem="Nsg-WQ-EH8" secondAttribute="leading" id="snd-Do-ir5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1jH-8C-knU" firstAttribute="leading" secondItem="fo4-P1-CK1" secondAttribute="leading" id="1On-Jn-Wv1"/>
+                            <constraint firstItem="1jH-8C-knU" firstAttribute="width" secondItem="fo4-P1-CK1" secondAttribute="width" id="RfA-aJ-caT"/>
+                            <constraint firstItem="1jH-8C-knU" firstAttribute="top" secondItem="n9I-6i-tJB" secondAttribute="top" id="amb-v9-wgO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="n9I-6i-tJB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gráfico" id="SSv-sv-f4J"/>
+                    <size key="freeformSize" width="414" height="1400"/>
+                    <connections>
+                        <outlet property="horizontalChart" destination="Nsg-WQ-EH8" id="8sL-sv-p0F"/>
+                        <outlet property="piChart" destination="yxt-0U-D0x" id="Fnr-vZ-szJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2FB-Kn-UNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1471" y="738"/>
+            <point key="canvasLocation" x="2486.9565217391305" y="737.94642857142856"/>
         </scene>
         <!--Sobre-->
         <scene sceneID="fHh-e4-0WR">

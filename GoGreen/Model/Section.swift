@@ -22,6 +22,7 @@ struct Section {
         self.equips = equips
         self.expanded = expanded
     }
+ 
     
 }
 

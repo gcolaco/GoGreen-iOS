@@ -12,6 +12,7 @@
 		727B9C4D2172944E0052E348 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C4C2172944E0052E348 /* ExpandableHeaderView.swift */; };
 		727B9C4F217294E90052E348 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C4E217294E90052E348 /* Section.swift */; };
 		727B9C532172F1920052E348 /* AddEquipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B9C522172F1920052E348 /* AddEquipViewController.swift */; };
+		729D85962176EA85002D0FA1 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729D85952176EA85002D0FA1 /* ChartsViewController.swift */; };
 		72A55408216800C000EFB8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55407216800C000EFB8DE /* AppDelegate.swift */; };
 		72A5540A216800C000EFB8DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55409216800C000EFB8DE /* ViewController.swift */; };
 		72A5540D216800C000EFB8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5540B216800C000EFB8DE /* Main.storyboard */; };
@@ -20,14 +21,18 @@
 		72A55415216800C200EFB8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A55413216800C200EFB8DE /* LaunchScreen.storyboard */; };
 		72A55421216AEF8500EFB8DE /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55420216AEF8500EFB8DE /* Environments.swift */; };
 		72A55423216AEFD700EFB8DE /* Equipments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55422216AEFD700EFB8DE /* Equipments.swift */; };
+		EA0B2FFD0CCEA3EF442A2AAC /* Pods_GoGreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6B2C3DC23B1FC8FEA60CB7 /* Pods_GoGreen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57E59E89FDC395F54AEA2968 /* Pods-GoGreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGreen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoGreen/Pods-GoGreen.debug.xcconfig"; sourceTree = "<group>"; };
+		6514584A927ABE4C1995E0EA /* Pods-GoGreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGreen.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoGreen/Pods-GoGreen.release.xcconfig"; sourceTree = "<group>"; };
 		727B9C4821704FE80052E348 /* EnvironmentsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentsListTableViewController.swift; sourceTree = "<group>"; };
 		727B9C4A21728BE00052E348 /* EquipmentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentsListViewController.swift; sourceTree = "<group>"; };
 		727B9C4C2172944E0052E348 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
 		727B9C4E217294E90052E348 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		727B9C522172F1920052E348 /* AddEquipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEquipViewController.swift; sourceTree = "<group>"; };
+		729D85952176EA85002D0FA1 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		72A55404216800C000EFB8DE /* GoGreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A55407216800C000EFB8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A55409216800C000EFB8DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		72A55416216800C200EFB8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A55420216AEF8500EFB8DE /* Environments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environments.swift; sourceTree = "<group>"; };
 		72A55422216AEFD700EFB8DE /* Equipments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipments.swift; sourceTree = "<group>"; };
+		9A6B2C3DC23B1FC8FEA60CB7 /* Pods_GoGreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoGreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0B2FFD0CCEA3EF442A2AAC /* Pods_GoGreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45DBAEFB2E0E4F2743683983 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A6B2C3DC23B1FC8FEA60CB7 /* Pods_GoGreen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		72A553FB216800C000EFB8DE = {
 			isa = PBXGroup;
 			children = (
 				72A55406216800C000EFB8DE /* GoGreen */,
 				72A55405216800C000EFB8DE /* Products */,
+				9F727575F9A4055CCA18FC0D /* Pods */,
+				45DBAEFB2E0E4F2743683983 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +104,7 @@
 				727B9C4821704FE80052E348 /* EnvironmentsListTableViewController.swift */,
 				727B9C4A21728BE00052E348 /* EquipmentsListViewController.swift */,
 				727B9C522172F1920052E348 /* AddEquipViewController.swift */,
+				729D85952176EA85002D0FA1 /* ChartsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,6 +130,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9F727575F9A4055CCA18FC0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57E59E89FDC395F54AEA2968 /* Pods-GoGreen.debug.xcconfig */,
+				6514584A927ABE4C1995E0EA /* Pods-GoGreen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72A55419216800C200EFB8DE /* Build configuration list for PBXNativeTarget "GoGreen" */;
 			buildPhases = (
+				F6C00EB30679BFAFAE9F2B4E /* [CP] Check Pods Manifest.lock */,
 				72A55400216800C000EFB8DE /* Sources */,
 				72A55401216800C000EFB8DE /* Frameworks */,
 				72A55402216800C000EFB8DE /* Resources */,
+				C70C6C9F924B12E95F78A0DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,12 +207,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C70C6C9F924B12E95F78A0DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoGreen/Pods-GoGreen-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoGreen/Pods-GoGreen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C00EB30679BFAFAE9F2B4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoGreen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72A55400216800C000EFB8DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				727B9C4F217294E90052E348 /* Section.swift in Sources */,
+				729D85962176EA85002D0FA1 /* ChartsViewController.swift in Sources */,
 				72A5540A216800C000EFB8DE /* ViewController.swift in Sources */,
 				727B9C4B21728BE00052E348 /* EquipmentsListViewController.swift in Sources */,
 				72A55423216AEFD700EFB8DE /* Equipments.swift in Sources */,
@@ -336,6 +413,7 @@
 		};
 		72A5541A216800C200EFB8DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E59E89FDC395F54AEA2968 /* Pods-GoGreen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -354,6 +432,7 @@
 		};
 		72A5541B216800C200EFB8DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6514584A927ABE4C1995E0EA /* Pods-GoGreen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

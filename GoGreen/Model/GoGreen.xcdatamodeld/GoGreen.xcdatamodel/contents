@@ -14,6 +14,6 @@
     </entity>
     <elements>
         <element name="Environments" positionX="-338.68359375" positionY="861.078125" width="128" height="73"/>
-        <element name="Equipments" positionX="-131.453125" positionY="844.15234375" width="128" height="133"/>
+        <element name="Equipments" positionX="-131.453125" positionY="844.15234375" width="128" height="135"/>
     </elements>
 </model>
